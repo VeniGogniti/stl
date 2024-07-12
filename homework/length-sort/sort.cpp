@@ -1,7 +1,7 @@
 #include "sort.hpp"
 
 std::deque<std::string> lengthSort(std::forward_list<std::string> &myString) {
-    std::deque<std::string> deqSorted {};
+    std::deque<std::string> deqSorted{};
 
     for (auto& it : myString) {
         deqSorted.emplace_back(it);
