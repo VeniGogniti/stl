@@ -1,6 +1,6 @@
 #include "vowel.hpp"
 
-std::vector<std::string> removeVowels(std::vector<std::string>& newVowels){
+std::vector<std::string> removeVowels(std::vector<std::string>& newVowels) {
     std::string wyraz = "AEIUOYaeiouy";
 
     for (auto& it : newVowels) {
@@ -10,5 +10,4 @@ std::vector<std::string> removeVowels(std::vector<std::string>& newVowels){
                  it.end());
     }
     return newVowels;
-
 }
