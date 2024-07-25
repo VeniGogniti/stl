@@ -3,6 +3,8 @@
 #include <cstdint>
 #include "compression.hpp"
 #include <iostream>
+#include <utility>
+#include <vector>
 
 constexpr size_t width = 32;
 constexpr size_t height = 32;
