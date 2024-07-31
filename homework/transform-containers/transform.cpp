@@ -9,6 +9,6 @@ std::map<int, std::string> removeDuplicateAndTranformToMap(std::list<std::string
 
     std::map<int, std::string> result;
     auto iter = list.begin();
-    std::transform(deq.begin(), deq.end(), std::inserter(result, result.end()), [&](auto i){return std::make_pair(i, *iter++);});
+    std::transform(deq.begin(), deq.end(), std::inserter(result, result.end()), [&](auto i) { return std::make_pair(i, *iter++); });
     return result; 
 }
