@@ -1,9 +1,8 @@
 #include "arithmeticAverage.hpp"
-#include <numeric>
 #include <algorithm>
-#include <iostream>
 #include <cmath>
-
+#include <iostream>
+#include <numeric>
 
 double ArithmeticAverage(std::vector<int> first, std::vector<int> second) {
     std::vector<double> result(first.size());
