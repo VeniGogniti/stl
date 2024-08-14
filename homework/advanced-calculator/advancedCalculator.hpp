@@ -6,15 +6,20 @@
 #define ADVANCEDCALCULATOR_ADVANCEDCALCULATOR_HPP
 
 #include <algorithm>
+#include <cmath>
+#include <iostream>
 #include <map>
 #include <string>
-#include <iostream>
 #include <regex>
-#include <cmath>
 #include <variant>
 
-enum class ErrorCode { OK, BadCharacter, BadFormat, DivideBy0, SqrtOfNegativeNumber, ModuleOfNonIntegerValue };
+enum class ErrorCode { OK,
+                       BadCharacter,
+                       BadFormat,
+                       DivideBy0,
+                       SqrtOfNegativeNumber,
+                       ModuleOfNonIntegerValue };
 
 ErrorCode process(std::string input, double* out);
 
-#endif //ADVANCEDCALCULATOR_ADVANCEDCALCULATOR_HPP
+#endif  // ADVANCEDCALCULATOR_ADVANCEDCALCULATOR_HPP

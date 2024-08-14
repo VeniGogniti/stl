@@ -28,7 +28,7 @@ ErrorCode process(std::string input, double* out) {
     std::string firstString{};
     std::string secondString{};
 
-    for (auto& it: input) {
+    for (auto& it : input) {
         if (!operatorFounded) {
             if (firstString.size() < 1 && it == '-' || it == '.' || std::isdigit(it) && !operatorFounded) {
                 firstString += it;
